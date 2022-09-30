@@ -1,0 +1,188 @@
+<html>
+<head>
+<title>
+REPORT CARD
+</title>
+
+<style>
+#info{
+background-color:rgb(230, 223, 207);
+margin:20px;
+padding:20px;
+border:2px solid black;
+}
+
+#marks{
+background-color:rgb(199, 237, 228);
+margin:20px;
+padding:20px;
+border:2px solid black;
+}
+
+</style>
+
+<script>
+function calculate(){
+
+var englishMark = document.getElementById("englishMarks").value;
+
+var tamilMark = document.getElementById("tamilMarks").value;
+var mathsMarks = document.getElementById("mathsMarks").value;
+var scienceMarks = document.getElementById("scienceMarks").value;
+var socialMarks = document.getElementById("socialMarks").value;
+var totalMarks = parseInt(englishMark)+parseInt(tamilMark)+parseInt(mathsMarks)+parseInt(scienceMarks)+parseInt(socialMarks);
+alert(totalMarks);
+ document.getElementById("totalMarks").value =totalMarks ;;
+
+}
+</script>
+
+</head>
+
+<body>
+<form>
+<div id = "info">
+<div style = "display:flex">
+<div style="width:20%">
+<label>Name :</label>
+</div>
+<div style="width:70%">
+<input type = "text">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>Phone Number :</label>
+</div>
+<div style="width:70%">
+<input type = "tel" id="username" name="username" maxlength="10">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>E-mail id :</label>
+</div>
+<div style="width:70%">
+<input type = "email">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>Address :</label>
+</div>
+
+<div style="width:70%">
+<input type = "text">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>Date of Birth :</label>
+</div>
+
+<div style="width:70%">
+<input type = "date">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>Gender :</label>
+</div>
+
+<div style="width:70%">
+<input type = "radio" name = "gender">
+<label>Male</label>
+<input type = "radio" name = "gender">
+<label>Female</label>
+<input type = "radio" name = "gender">
+<label>Others</label>
+</div>
+</div>
+</div>
+
+<div id = "marks">
+<div style = "display:flex">
+<div style="width:20%">
+<label>Marks obtained in English :</label>
+</div>
+
+<div style="width:70%">
+<input type = "number" id = "englishMarks">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>Marks obtained in Tamil :</label>
+</div>
+
+<div style="width:70%">
+<input type = "number" id = "tamilMarks">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>Marks obtained in Maths :</label>
+</div>
+
+<div style="width:70%">
+<input type = "number" id = "mathsMarks">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>Marks obtained in Science :</label>
+</div>
+
+<div style="width:70%">
+<input type = "number" id = "scienceMarks">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>Marks obtained in Social :</label>
+</div>
+
+<div style="width:70%">
+<input type = "number" id = "socialMarks">
+</div>
+</div>
+<br>
+
+<div style = "display:flex">
+<div style="width:20%">
+<label>Total Marks obtained :</label>
+</div>
+
+<div style="width:70%">
+<input type = "number" id = "totalMarks">
+<button style = "text-align:center;margin-left:20px;" onclick = "calculate()"> calculate </button>
+
+</div>
+</div>
+
+
+</div>
+
+</form>
+</body>
+
+
+</html>
